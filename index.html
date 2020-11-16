@@ -44,6 +44,20 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
+		
+   .mobileShow { display: none;}
+   /* Smartphone Portrait and Landscape */
+   @media only screen
+   and (min-width : 0px)
+   and (max-width : 485px){ .mobileShow { display: inline;}}
+
+
+   .mobileHide { display: inline;}
+   /* Smartphone Portrait and Landscape */
+   @media only screen
+   and (min-width : 0px)
+   and (max-width : 485px){  .mobileHide { display: none;}}
+
 	
 	.button {
 		display: inline-block;
@@ -65,6 +79,26 @@
 		color: #8fb4da;
 		border-color: #8fb4da;
 	}
+		.mobile-button {
+		display: inline-block;
+		text-align: center;
+		text-decoration: none;
+		letter-spacing: 1px;
+		border: 1px solid;
+		transition: all 0.2s ease;
+		border-radius: 8px;
+		font-family: 'IM Fell Great Primer', serif;
+		font-size: 18px;
+		padding: 4px 8px;
+		color: #ffffff;
+		border-color: #ffffff;
+	}
+	
+	.mobile-button:hover {
+		background: ;
+		color: #8fb4da;
+		border-color: #8fb4da;
+	}
 	
 	.footer {
 		position: fixed;
@@ -78,11 +112,37 @@
 		font-family: IM Fell Great Primer, serif;
 		font-size: 16px;
 	}
+
 	</style>
 </head>
 
 <body>
 	<div align="right"><a class="lang-button" href="#">한국어</a></div>
+
+	<div class="mobileShow">
+	<div class="infocard">
+		<table valign="center" width=320px border="0">
+			<tbody>
+				<tr>
+					<td width=128px rowspan="3"><img height="60%" src="https://gethancoleman.github.io/ethancoleman/round.png"></td>
+					<td height="60px" colspan="2" valign="bottom">
+						<div style="font-family: IM Fell Great Primer, serif;font-size: 28px;color: #ffffff;">Ethan Coleman</div>
+					</td>
+				</tr>
+				<tr>
+					<td height="30px" colspan="2" valign="top">
+						<div style="font-family: 'Josefin Sans', sans-serif;font-size: 17px;color: #8fb4da;">TEFL Instructor</div>
+					</td>
+				</tr>
+				<tr>
+					<td height="68px" valign="top" align="left"><a class="mobile-button" href="#">Résumé</a></td>
+					<td width="px" valign="top" align="right"><a class="mobile-button" href="#">Contact</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<div class="mobileHide">
 	<div class="infocard">
 		<table valign="center" width=485px border="0">
 			<tbody>
@@ -104,6 +164,7 @@
 			</tbody>
 		</table>
 	</div>
+</div>
 	<div class="footer">
 		<div>Copyright © 2020 Ethan Coleman&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;Privacy Policy</div>
 	</div>
