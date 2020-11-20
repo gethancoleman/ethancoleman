@@ -167,8 +167,7 @@ a:active {
 		font-size: 13px;
 	}
 		
-		.contact-window {
-  
+.contact-window {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.4);
   top: 0;
@@ -178,20 +177,18 @@ a:active {
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s;
-
+		}
   
-  &:target {
-
+  .contact-window:target {
     visibility: visible;
     opacity: 1;
     pointer-events: auto;
   }
-  &>div {
+			
+  .contact-window > div {
     width: 100%;
     height: 100%;
-
     position: fixed;
-
       padding: 20px;
 		background-image: url('https://gethancoleman.github.io/ethancoleman/mountains.png');
 		background-repeat: no-repeat;
@@ -204,13 +201,13 @@ a:active {
     font-family: 'IM Fell Great Primer', serif;
   }
 
-  h1 {
+			.contact-window > div > h1 {
     font-size: 150%;
     margin: 0 0 15px;
     font-family: 'Josefin Sans', sans-serif;
     color: #ffffff;
   }
-}
+
 
 .contact-close {
   color: #aaa;
@@ -238,20 +235,20 @@ a:active {
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s;
+		}
 
   
-  &:target {
+  .resume-window:target {
 
     visibility: visible;
     opacity: 1;
     pointer-events: auto;
   }
-  &>div {
+			
+  .resume-window>div {
     width: 100%;
     height: 100%;
-
     position: fixed;
-
       padding: 20px;
 		background-image: url('https://gethancoleman.github.io/ethancoleman/mountains.png');
 		background-repeat: no-repeat;
@@ -264,13 +261,13 @@ a:active {
     font-family: 'IM Fell Great Primer', serif;
   }
 
-  h1 {
+			.resume-window:h1 {
     font-size: 150%;
     margin: 0 0 15px;
     font-family: 'Josefin Sans', sans-serif;
     color: #ffffff;
   }
-}
+
 
 .resume-close {
   color: #aaa;
