@@ -166,6 +166,138 @@ a:active {
 		font-family: IM Fell Great Primer, serif;
 		font-size: 13px;
 	}
+		
+		.contact-window {
+  
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+
+  
+  &:target {
+
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  &>div {
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+
+      padding: 20px;
+		background-image: url('https://gethancoleman.github.io/ethancoleman/mountains.png');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		background-position: center;
+			overflow: hidden; /* Hide scrollbars */
+			background-color: #000000;
+    border-radius: 4px;
+    font-family: 'IM Fell Great Primer', serif;
+  }
+
+  h1 {
+    font-size: 150%;
+    margin: 0 0 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ffffff;
+  }
+}
+
+.contact-close {
+  color: #aaa;
+  line-height: 50px;
+  font-size: 28px;
+  position: fixed;
+  right: 0px;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none;
+  &:hover {
+    color: black;
+  }
+}
+
+.resume-window {
+  
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+
+  
+  &:target {
+
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  &>div {
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+
+      padding: 20px;
+		background-image: url('https://gethancoleman.github.io/ethancoleman/mountains.png');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		background-position: center;
+			overflow: hidden; /* Hide scrollbars */
+			background-color: #000000;
+    border-radius: 4px;
+    font-family: 'IM Fell Great Primer', serif;
+  }
+
+  h1 {
+    font-size: 150%;
+    margin: 0 0 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ffffff;
+  }
+}
+
+.resume-close {
+  color: #aaa;
+  line-height: 50px;
+  font-size: 28px;
+  position: fixed;
+  right: 0px;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none;
+  &:hover {
+    color: black;
+  }
+}
+
+body {
+		background-image: url('https://gethancoleman.github.io/ethancoleman/mountains.png');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		background-position: center;
+			overflow: hidden; /* Hide scrollbars */
+			background-color: #000000;
+}
+
+
 
 	</style>
 </head>
@@ -189,8 +321,8 @@ a:active {
 					</td>
 				</tr>
 				<tr>
-					<td height="68px" valign="top" align="left"><a class="mobile-button" href="#">Résumé</a></td>
-					<td width="px" valign="top" align="right"><a class="mobile-button" href="#">Contact</a></td>
+					<td height="68px" valign="top" align="left"><a class="mobile-button" href="#resume">Résumé</a></td>
+					<td width="px" valign="top" align="right"><a class="mobile-button" href="#contact">Contact</a></td>
 				</tr>
 			</tbody>
 		</table>
@@ -215,8 +347,8 @@ a:active {
 					</td>
 				</tr>
 				<tr>
-					<td height="68px" valign="top" align="left"><a class="button" href="#">Résumé</a></td>
-					<td width="100px" valign="top" align="right"><a class="button" href="#">Contact</a></td>
+					<td height="68px" valign="top" align="left"><a class="button" href="#resume">Résumé</a></td>
+					<td width="100px" valign="top" align="right"><a class="button" href="#contact">Contact</a></td>
 				</tr>
 			</tbody>
 		</table>
@@ -226,6 +358,55 @@ a:active {
 	</div>
 </div>
 
+	
+<div id="contact" class="contact-window">
+  <div>
+    <a href="#" title="Close" class="contact-close">&times;</a>
+    <h1>Contact</h1>
+    <div>
+<script type="text/javascript">var submitted=false;</script>
+<iframe name="hidden_iframe" id="hidden_iframe"
+style="display:none;" onload="if(submitted)
+{window.location='#confirmation';}"></iframe>
+<form id="contact" action="https://docs.google.com/forms/d/e/1FAIpQLScUp80o2gRNzdOOahXpRG-DsVxF9NSO7f2S_I5gnm7cqsDVXA/formResponse" method="post"
+target="hidden_iframe" onsubmit="submitted=true;">
+	<table border="1">
+	<tbody>
+		<tr>
+			<td colspan="2"> <input name="entry.727476930" placeholder="Name" type="text" tabindex="1" required autofocus></td>
+
+		</tr>
+		<tr>
+			<td colspan="2"><input name="entry.296653583" placeholder="Email Address" type="email" tabindex="2" required></td>
+
+		</tr>
+		<tr>
+			<td colspan="2"><textarea name="entry.724145073" placeholder="Message" tabindex="3" required></textarea></td>
+
+		</tr>
+		<tr>
+			<td ><button name="submit" type="submit" data-submit="...Sending">Submit</button></td>
+			<td><a href="#" title="Close">Close</a></td>
+		</tr>
+	</tbody>
+</table>
+		</form>
+</div>
+
+    </div>
+  </div>	
+	
+	<div id="resume" class="resume-window">
+  <div>
+    <a href="#" title="Close" class="resume-close">&times;</a>
+    <h1>Resume</h1>
+    <div>
+      Resume content
+      <a href="#" title="Close">Close</a>
+</div>
+    </div>
+  </div>
+	
 </body>
 
 </html>
