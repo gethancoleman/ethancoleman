@@ -1,470 +1,129 @@
 <!doctype html>
 <html>
-	<head>
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer&family=Josefin+Sans:wght@700&family=Noto+Sans+KR&display=swap" rel="stylesheet">
-		<title>Ethan Coleman</title>
-		<meta name="description" content="TEFL Instructor ">
-		<meta name="keywords" content="ethan coleman, tefl, seoul, korea, toronto, canada">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<style>
-			body {
-			background-image: url('https://gethancoleman.github.io/ethancoleman/mountains.png');
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-			background-size: cover;
-			background-position: center;
-			overflow: hidden; /* Hide scrollbars */
-			background-color: #000000;
-			-webkit-touch-callout: none; /* iOS Safari */
-			-webkit-user-select: none; /* Safari */
-			-khtml-user-select: none; /* Konqueror HTML */
-			-moz-user-select: none; /* Old versions of Firefox */
-			-ms-user-select: none; /* Internet Explorer/Edge */
-			user-select: none; /* Non-prefixed version, currently
-			supported by Chrome, Edge, Opera and Firefox */
-			}
-			/* unvisited link */
-			a:link {
-			color: #ffffff;
-			}
-			/* visited link */
-			a:visited {
-			color: #ffffff;
-			}
-			/* mouse over link */
-			a:hover {
-			color: #8fb4da;
-			-webkit-transition:all 0.2s ease-in-out;
-			-moz-transition:all 0.2s ease-in-out;
-			transition:all 0.2s ease-in-out;
-			}
-			/* selected link */
-			a:active {
-			color: #8fb4da;
-			}
-			img {
-			-khtml-user-select: none;
-			-o-user-select: none;
-			-moz-user-select: none;
-			-webkit-user-select: none;
-			user-select: none;
-			}
-			img {
-			-webkit-user-drag: none;
-			-khtml-user-drag: none;
-			-moz-user-drag: none;
-			-o-user-drag: none;
-			user-drag: none;
-			}
-			input {
-			width: 100%;
-			padding: 12px 12px;
-			margin: 5px 0px;
-			box-sizing: border-box;
-			border: 1px solid #ffffff;
-			background: transparent;
-			font-family: 'IM Fell Great Primer', serif;
-			font-size: 18px;
-			color: #ffffff;
-			border-radius: 8px;
-			-webkit-transition:border-color 0.2s ease-in-out;
-			-moz-transition:border-color 0.2s ease-in-out;
-			transition:border-color 0.2s ease-in-out;
-			}
-			textarea {
-			width: 100%;
-			height: 150px;
-			padding: 12px 12px;
-			box-sizing: border-box;
-			border: 1px solid #ffffff;
-			border-radius: 8px;
-			background: transparent;
-			resize: none;
-			margin: 5px 0px;
-			font-family: 'IM Fell Great Primer', serif;
-			font-size: 18px;
-			color: #ffffff;
-			-webkit-transition:border-color 0.2s ease-in-out;
-			-moz-transition:border-color 0.2s ease-in-out;
-			transition:border-color 0.2s ease-in-out;
-			}
-			input:focus, input:hover, textarea:focus, textarea:hover {
-			outline:0;
-			border:1px solid #8fb4da;
-			}
-			.contact-submit-button{
-			background: transparent;
-			display: inline-block;
-			text-align: center;
-			text-decoration: none;
-			letter-spacing: 1px;
-			border: 1px solid;
-			-webkit-transition:all 0.2s ease-in-out;
-			-moz-transition:all 0.2s ease-in-out;
-			transition:all 0.2s ease-in-out;
-			border-radius: 8px;
-			font-family: 'IM Fell Great Primer', serif;
-			font-size: 18px;
-			padding: 4px 0px;
-			color: #ffffff;
-			border-color: #ffffff;
-			cursor:pointer;
-			width: 100%;
-			}
-			.contact-submit-button:hover {
-			color: #8fb4da;
-			border-color: #8fb4da;
-			}
-			.contact-close-button{
-			background: transparent;
-			display: inline-block;
-			text-align: center;
-			text-decoration: none;
-			letter-spacing: 1px;
-			border: 1px solid;
-			-webkit-transition:all 0.2s ease-in-out;
-			-moz-transition:all 0.2s ease-in-out;
-			transition:all 0.2s ease-in-out;
-			border-radius: 8px;
-			font-family: 'IM Fell Great Primer', serif;
-			font-size: 18px;
-			padding: 4px 0px;
-			color: #ffffff;
-			border-color: #ffffff;
-			width: 100%;
-			}
-			.contact-close-button:hover {
-			color: #8fb4da;
-			border-color: #8fb4da;
-			}
-			.lang-button {
-			display: inline-block;
-			text-align: center;
-			text-decoration: none;
-			letter-spacing: 1px;
-			border: 1px solid;
-			-webkit-transition:all 0.2s ease-in-out;
-			-moz-transition:all 0.2s ease-in-out;
-			transition:all 0.2s ease-in-out;
-			border-radius: 6px;
-			font-family: 'IM Fell Great Primer', serif;
-			font-size: 18px;
-			padding: 3px 6px;
-			color: #ffffff;
-			border-color: #ffffff;
-			}
-			.lang-button:hover {
-			background: ;
-			color: #8fb4da;
-			border-color: #8fb4da;
-			}
-			.infocard {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			}
-			.error { display: none;}
-			/* Smartphone Portrait and Landscape */
-			@media only screen
-			and (min-width : 0px)
-			and (max-width : 270px){ .error { display: inline;}}
-			.errorMessage {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			font-family: 'IM Fell Great Primer', serif;
-			font-size: 16px;
-			width: 95%;
-			color: #ffffff;
-			}
-			.errorMessage div {
-			font-family: 'Josefin Sans', sans-serif;
-			font-size: 16px;
-			font-weight: bold;
-			color: #8fb4da;
-			}
-			.main { display: inline;}
-			/* Smartphone Portrait and Landscape */
-			@media only screen
-			and (min-width : 0px)
-			and (max-width : 270px){  .main { display: none;}}
-			.mainTable {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			background-image: url('https://gethancoleman.github.io/ethancoleman/infocard.png');
-			background-repeat: no-repeat;
-			background-size: 100%;
-			width: 95%;
-			max-width: 485px;
-			min-width: 260px;
-			max-height: 187px;
-			height: 37.4vw;
-			border: 0px solid black;
-			border-collapse: collapse;	
-			}
-			.mainTable td{
-			border: 0px solid black;
-			}
-			.button {
-			background: transparent;
-			display: inline-block;
-			text-align: center;
-			text-decoration: none;
-			letter-spacing: 1px;
-			border: 1px solid;
-
-			border-radius: 8px;
-			font-family: 'IM Fell Great Primer', serif;
-			font-size: min(5.35vw, 30px);
-			padding: 4px 8px;
-			color: #ffffff;
-			border-color: #ffffff;
-			}
-			.button:hover {
-			-webkit-transition:all 0.2s ease-in-out;
-			-moz-transition:all 0.2s ease-in-out;
-			transition:all 0.2s ease-in-out;
-			background: transparent;
-			color: #8fb4da;
-			border-color: #8fb4da;
-			}
-			.footer {
-			position: fixed;
-			left: 0;
-			bottom: 0;
-			width: 100%;
-			padding-top: 15px;
-			padding-bottom: 15px;
-			color: white;
-			text-align: center;
-			font-family: IM Fell Great Primer, serif;
-			font-size: 16px;	
-			}
-			.mobile-footer {
-			position: fixed;
-			left: 0;
-			bottom: 0;
-			width: 100%;
-			padding-top: 15px;
-			padding-bottom: 15px;
-			color: white;
-			text-align: center;
-			font-family: IM Fell Great Primer, serif;
-			font-size: 13px;
-			}
-			.contact-window {
-			position: fixed;
-			background-color: rgba(0, 0, 0, 0.4);
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			opacity: 0;
-			pointer-events: none;
-			transition: all 0.3s;
-			}
-			.contact-window:target {
-			visibility: visible;
-			opacity: 1;
-			pointer-events: auto;
-			}
-			.contact-window > div {
-			width: 100%;
-			height: 100%;
-			position: fixed;
-			background-image: url('https://gethancoleman.github.io/ethancoleman/mountains.png');
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-			background-size: cover;
-			background-position: center;
-			overflow: hidden; /* Hide scrollbars */
-			background-color: #000000;
-			font-family: 'IM Fell Great Primer', serif;
-			}
-			.contact-window > div > h1 {
-			font-size: 150%;
-			margin: 0 0 15px;
-			font-family: 'Josefin Sans', sans-serif;
-			color: #ffffff;
-			}
-			.contact-close {
-			color: #aaa;
-			line-height: 50px;
-			font-size: 28px;
-			position: fixed;
-			right: 0px;
-			text-align: center;
-			top: 0;
-			width: 70px;
-			text-decoration: none;
-			-webkit-transition:all 0.2s ease-in-out;
-			-moz-transition:all 0.2s ease-in-out;
-			transition:all 0.2s ease-in-out;
-			}
-			.contact-close:hover{
-			color: #8fb4da;
-			}
-			.donate-window {
-			position: fixed;
-			background-color: rgba(0, 0, 0, 0.4);
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			opacity: 0;
-			pointer-events: none;
-			transition: all 0.3s;
-			}
-			.donate-window:target {
-			visibility: visible;
-			opacity: 1;
-			pointer-events: auto;
-			}
-			.donate-window > div {
-			width: 100%;
-			height: 100%;
-			position: fixed;
-			padding: 20px;
-			background-image: url('https://gethancoleman.github.io/ethancoleman/mountains.png');
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-			background-size: cover;
-			background-position: center;
-			overflow: hidden; /* Hide scrollbars */
-			background-color: #000000;
-			border-radius: 4px;
-			font-family: 'IM Fell Great Primer', serif;
-			}
-			.donate-window h1 {
-			font-size: 150%;
-			margin: 0 0 15px;
-			font-family: 'Josefin Sans', sans-serif;
-			color: #ffffff;
-			}
-			.donate-close {
-			color: #aaa;
-			line-height: 50px;
-			font-size: 28px;
-			position: fixed;
-			right: 0px;
-			text-align: center;
-			top: 0;
-			width: 70px;
-			text-decoration: none;
-			-webkit-transition:all 0.2s ease-in-out;
-			-moz-transition:all 0.2s ease-in-out;
-			transition:all 0.2s ease-in-out;
-			}
-			.donate-close hover {
-			color: #8fb4da;
-			}
-			body {
-			background-image: url('https://gethancoleman.github.io/ethancoleman/mountains.png');
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-			background-size: cover;
-			background-position: center;
-			overflow: hidden; /* Hide scrollbars */
-			background-color: #000000;
-			}
-		</style>
-	</head>
-	<body>
-		<div align="right"><a class="lang-button" href="#donate">Donate</a></div>
-		<div class="error">
-			<div class="errorMessage">
-				<div>Error: Low Screen Resolution</div>
-				<br>
-				Device widths of less than 270px are unsupported. Please visit this website from a modern PC or mobile device.
-			</div>
-		</div>
-		<div class="main">
-			<table class="mainTable">
-				<tbody>
-					<tr>
-						<td rowspan="2"></td>
-						<td width="57.5%" height="46.8%" rowspan="1" colspan="2"></td>
-					</tr>
-					<tr>
-						<td  valign="middle" align="left">
-							<div><a class="button" href="resume.pdf" target="_blank">Résumé</a></div>
-						</td>
-						<td  valign="middle" align="right"><a class="button" href="#contact">Contact</a></td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-		<div class="footer">
-			<div>Copyright © 2020&#8209;2021&nbsp;Ethan Coleman&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;<a style=";text-decoration: none;" href="#">Privacy&nbsp;Policy</a></div>
-		</div>
-		<div id="contact" class="contact-window">
-			<div>
-				<a href="#" title="Close" class="contact-close">&times;</a>
-				<h1></h1>
-				<div>
-					<script type="text/javascript">var submitted=false;</script>
-					<iframe name="hidden_iframe" id="hidden_iframe"
-						style="display:none;" onload="if(submitted)
-						{window.location='#confirmation';}"></iframe>
-					<form id="contact" action="https://docs.google.com/forms/d/e/1FAIpQLScUp80o2gRNzdOOahXpRG-DsVxF9NSO7f2S_I5gnm7cqsDVXA/formResponse" method="post"
-						target="hidden_iframe" onsubmit="submitted=true;">
-						<table style="padding: 15px; width: 100%; max-width: 485px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)" border="0px">
-							<tbody>
-								<tr>
-									<td colspan="3">
-										<div style="font-family: 'Josefin Sans', sans-serif; font-size: 28px; text-align: center; padding: 4px 8px; color: #ffffff;">Contact</div>
-									</td>
-								</tr>
-								<tr>
-									<td colspan="3">
-										<div style="text-align:center"><input name="entry.727476930" placeholder="Name" type="text" tabindex="1" required autofocus></div>
-									</td>
-								</tr>
-								<tr>
-									<td colspan="3">
-										<div style="text-align:center"><input name="entry.296653583" placeholder="Email Address" type="email" tabindex="2" required></div>
-									</td>
-								</tr>
-								<tr>
-									<td colspan="3">
-										<div style="text-align:center"><textarea name="entry.724145073" placeholder="Message" tabindex="3" required></textarea></div>
-									</td>
-								</tr>
-								<tr>
-									<td width="49.25%">
-										<div style="text-align:center"><button class="contact-submit-button" name="submit" type="submit" data-submit="...Sending">Submit</button></div>
-									</td>
-									<td width="1.5%"></td>
-									<td width="49.25%">
-										<div style="text-align:center"><a class="contact-close-button" href="#" title="Close">Close</a></div>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</form>
-				</div>
-									<div class="footer">
-			<div>Copyright © 2020&#8209;2021&nbsp;Ethan Coleman&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;<a style=";text-decoration: none;" href="#">Privacy&nbsp;Policy</a></div>
-	</div>
-			</div>
-		</div>
-		<div id="donate" class="donate-window">
-			<div>
-				<a href="#" title="Close" class="donate-close">&times;</a>
-				<h1>Donate</h1>
-				<div>
-					I recently started my Master of Public Administration program 
-					<a href="#" title="Close">Close</a>
-				</div>
-									<div class="footer">
-			<div>Copyright © 2020&#8209;2021&nbsp;Ethan Coleman&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;<a style=";text-decoration: none;" href="#">Privacy&nbsp;Policy</a></div>
-	</div>
-			</div>
-		</div>
-	</body>
+  <head>
+    <link rel=preconnect href=https://fonts.googleapis.com>
+    <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer&family=Josefin+Sans:wght@700&display=swap" rel=stylesheet>
+    <link href=https://gethancoleman.github.io/ethancoleman/style.css rel=stylesheet type="text/css"/>
+    <title>Ethan Coleman</title>
+    <link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
+    <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
+    <link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
+    <link rel=manifest href=/site.webmanifest>
+    <link rel=mask-icon href=/safari-pinned-tab.svg color=#0b3968>
+    <link rel=canonical href=https://www.ethancoleman.co/ />
+    <meta name=msapplication-TileColor content=#2d89ef>
+    <meta name=theme-color content=#8fb4da>
+    <meta name=description content="The personal website of Ethan Coleman">
+    <meta name=keywords content="ethan coleman, mpa, public administration, shoebox project, arkansas state university">
+    <meta name=”robots” content="index, follow">
+    <meta property=og:title content="Ethan Coleman">
+    <meta property=og:site_name content=www.ethancoleman.co>
+    <meta property=og:url content=https://www.ethancoleman.co>
+    <meta property=og:description content="The personal website of Ethan Coleman">
+    <meta property=og:type content=website>
+    <meta property=og:image content=https://gethancoleman.github.io/ethancoleman/og-image.png>
+    <meta name=twitter:card content=summary_large_image>
+    <meta name=twitter:site content=@gethancoleman>
+    <meta name=twitter:title content="Ethan Coleman">
+    <meta name=twitter:description content="The personal website of Ethan Coleman">
+    <meta name=twitter:image content=https://gethancoleman.github.io/ethancoleman/og-image.png>
+    <meta name=viewport content="width=device-width, initial-scale=1.0">
+    <noscript>
+      <style>.main{display:none}.footer{display:none}.srError{display:none}.contact-window{display:none}</style>
+    </noscript>
+  </head>
+  <body>
+    <div class=srError>
+      <div class=errorMessage>
+        <div style="padding:0 0 6px 0">Error: Low Screen Resolution</div>
+        Device widths of less than 270px are unsupported. Please visit this website from a modern PC or mobile device.
+      </div>
+    </div>
+    <div class=errorMessage>
+      <noscript>
+        <table class=jsErrorTable>
+          <tbody>
+            <tr>
+              <td>
+                <div style="padding:0 0 6px 0">Error: JavaScript Disabled</div>
+                Please enable JavaScript and reload the page. See <a href=https://www.enable-javascript.com/ target=_blank>here</a>for instructions.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </noscript>
+    </div>
+    <div class=main>
+      <table class=mainTable>
+        <tbody>
+          <tr>
+            <td rowspan=2></td>
+            <td width=57.5% height=46.8% rowspan=1 colspan=2></td>
+          </tr>
+          <tr>
+            <td valign=middle align=left>
+              <div><a class=button href=resume.pdf target=_blank>Résumé</a></div>
+            </td>
+            <td valign=middle align=right><a class=button href=#contact>Contact</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class=footer>
+      <div>© 2020&#8209;2021&nbsp;Ethan Coleman</div>
+    </div>
+    <div id=contact class=contact-window>
+      <div>
+        <a href=# title=Close class=contact-close>&times;</a>
+        <h1></h1>
+        <div>
+          <script type=text/javascript>var submitted=false;</script>
+          <iframe name=hidden_iframe id=hidden_iframe style=display:none onload="if(submitted)
+            {window.location='#confirmation';}"></iframe>
+          <form id=contact action=https://docs.google.com/forms/d/e/1FAIpQLScUp80o2gRNzdOOahXpRG-DsVxF9NSO7f2S_I5gnm7cqsDVXA/formResponse method=post target=hidden_iframe onsubmit="submitted=true">
+            <table style=padding:15px;width:100%;max-width:485px;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) border=0px>
+              <tbody>
+                <tr>
+                  <td colspan=3>
+                    <div style="font-family:'Josefin Sans',sans-serif;font-size:28px;text-align:center;padding:4px 8px;color:#fff">Contact</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan=3>
+                    <div style=text-align:center><input name=entry.727476930 placeholder=Name type=text tabindex=1 required autofocus></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan=3>
+                    <div style=text-align:center><input name=entry.296653583 placeholder="Email Address" type=email tabindex=2 required></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan=3>
+                    <div style=text-align:center><textarea name=entry.724145073 placeholder=Message tabindex=3 required></textarea></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width=49.25%>
+                    <div style=text-align:center><button class=contact-submit-button name=submit type=submit data-submit=...Sending>Submit</button></div>
+                  </td>
+                  <td width=1.5%></td>
+                  <td width=49.25%>
+                    <div style=text-align:center><a class=contact-close-button href=#>Close</a></div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </form>
+        </div>
+        <div class=footer>
+          <div>© 2020&#8209;2021&nbsp;Ethan Coleman</div>
+        </div>
+      </div>
+    </div>
+    <div class=footer>
+      <div>© 2020&#8209;2021&nbsp;Ethan Coleman</div>
+    </div>
+  </body>
 </html>
